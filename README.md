@@ -38,6 +38,8 @@ All properties of React `input` are support;
 | className | className of the input | String |  | `'ra-input'` |
 | disabled | whether the input is disabled | Boolean |  | `false` |
 | skin | skin of the input | 'success'│'error'│'default' |  | `'default'` |
+| style | style of the input | Object |  | `{}` |
+| width | width of the input | Number |  | `280` |
 [insert]: # (end:src/index.jsx)
 
 ## Development

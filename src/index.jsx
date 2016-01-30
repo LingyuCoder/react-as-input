@@ -10,6 +10,7 @@ class Input extends React.Component {
     let {
       className,
       skin,
+      style,
       ...props
     } = this.props;
     let classes = ClassNames({
@@ -17,7 +18,8 @@ class Input extends React.Component {
       [skin]: true,
       disabled: this.props.disabled
     });
-    return <input className={classes} {...props}/>;
+    style.width = this.props.width;
+    return <input className={classes} style={style} {...props}/>;
   }
 }
 Input.displayName = 'Input';
@@ -33,11 +35,21 @@ Input.propTypes = {
   /**
    * skin of the input
    */
-  skin: React.PropTypes.oneOf(['success', 'error', 'default'])
+  skin: React.PropTypes.oneOf(['success', 'error', 'default']),
+  /**
+   * style of the input
+   */
+  style: React.PropTypes.object,
+  /**
+   * width of the input
+   */
+  width: React.PropTypes.number
 };
 Input.defaultProps = {
   className: 'ra-input',
   skin: 'default',
-  disabled: false
+  disabled: false,
+  width: 280,
+  style: {}
 };
 export default Input;

@@ -5,7 +5,13 @@ import Input from '../src/index.jsx';
 ReactDOM.render(
   <div className="fields">
     <div className="field">
+      <Input defaultValue="normal input" width={210}/>
+    </div>
+    <div className="field">
       <Input defaultValue="normal input"/>
+    </div>
+    <div className="field">
+      <Input defaultValue="normal input" width={350}/>
     </div>
     <div className="field">
       <Input defaultValue="success" skin="success"/>
