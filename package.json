@@ -1,6 +1,6 @@
 {
   "name": "react-as-input",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple React text input wrapped with styles",
   "main": "./src/index.jsx",
   "scripts": {
