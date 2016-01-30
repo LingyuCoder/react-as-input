@@ -1,0 +1,40 @@
+@text-light: #d2d4d8;
+@text-normal: #55606e;
+@focus: #24afb2;
+@success: #26ae90;
+@error: #cd4237;
+@normal: #fff;
+@font: "Microsoft YaHei",tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+
+.ra-input {
+  display: inline-block;
+  width: 280px;
+  height: 40px;
+  padding: 10px 16px;
+  font-size: 12px;
+  font-family: @font;
+  line-height: 20px;
+  color: @text-normal;
+  border: 2px solid @normal;
+  border-radius: 2px;
+  background-color: @normal;
+  box-sizing: border-box;
+  &:focus {
+    border: 2px solid @focus;
+    color: @focus;
+    outline: none;
+  }
+  &.success {
+    border: 2px solid @success;
+    color: @success;
+  }
+  &.error {
+    border: 2px solid @error;
+    color: @error;
+  }
+  &.disabled {
+    border: 2px solid @text-light;
+    color: @text-light;
+    cursor: not-allowed;
+  }
+}
