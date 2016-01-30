@@ -56,7 +56,8 @@
     "url": "git+https://github.com/LingyuCoder/react-as-input.git"
   },
   "keywords": [
-    "react"
+    "react",
+    "input"
   ],
   "bugs": {
     "url": "https://github.com/LingyuCoder/react-as-input/issues"
